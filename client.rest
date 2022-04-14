@@ -1,0 +1,30 @@
+GET http://localhost:4000/recipes
+
+###
+
+GET http://localhost:4000/recipes/1
+
+###
+
+POST http://localhost:4000/recipes
+content-type:application/json
+
+{
+    "nazwa":"uszatka",
+    "skladniki":"ucho, chleb",
+    "przepis":"kanibalizm"
+}
+
+###
+
+PUT http://localhost:4000/recipes/14
+content-type:application/json
+
+{
+    "nazwa":"maslanka",
+    "przepis":"zapiecz chleb z maslem"
+}
+
+###
+
+DELETE http://localhost:4000/recipes/2
